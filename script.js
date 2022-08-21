@@ -6,5 +6,21 @@ function getComputerChoice() {
     return choices;
 }
 
-getComputerChoice();
 
+let playerSelection = "Rock";
+let computerSelection = getComputerChoice();
+
+
+function playRound(playerSelection, computerSelection) {
+    if (computerSelection == "rock" && playerSelection == "Rock") {
+        alert("It's a tie")
+    } else if (computerSelection == "scissor") {
+        alert ("You win");
+    } else {
+        alert ("You Lose")
+    }
+}
+
+playRound(playerSelection, computerSelection);
+
+console.log(playerSelection, computerSelection);
