@@ -7,8 +7,11 @@ function getComputerChoice() {
 }
 
 
+
 let playerSelection = "Rock";
 let computerSelection = getComputerChoice();
+
+// single round function to be used in best of 5 game later in project 
 
 
 function playRound(playerSelection, computerSelection) {
